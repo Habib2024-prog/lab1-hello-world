@@ -1,0 +1,142 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background-color: #15938d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+/* Horizontal Navigation Bar using Float */
+nav {
+    background-color: #0f172a;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #24a9a0;
+}
+
+/* Container & Layout Utilities */
+.container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Clearfix Utility to fix layout overflow caused by float */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Side-by-Side Profile & Content using Float */
+.profile-img {
+    float: left;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid #cbd5e1;
+}
+
+.content-right {
+    /* Fits remaining text next to floated image */
+    overflow: hidden;
+}
+
+/* Section styling */
+.section-box {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Image Gallery using Float & Clear */
+.gallery-item {
+    float: left;
+    width: 30%;
+    /* Fits 3 per row with margins */
+    margin: 1.66%;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e1;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    /* Prevents image compression */
+    border-radius: 50%;
+}
+
+.gallery-item p {
+    margin: 8px 0 0 0;
+    font-size: 0.9em;
+    color: #64748b;
+}
+
+/* Lists and Tables */
+ul.styled-list,
+ol.styled-list {
+    padding-left: 20px;
+}
+
+ul.styled-list li,
+ol.styled-list li {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    line-height: 2;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #15938d;
+    color: #fff;
+    margin-top: 30px;
+}
